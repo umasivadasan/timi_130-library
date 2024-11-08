@@ -1,0 +1,681 @@
+
+Transmit_to_display.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000002  00804000  00000496  0000052a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000496  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000028  00804002  00804002  0000052c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000052c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000055c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000200  00000000  00000000  0000059c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000054fa  00000000  00000000  0000079c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00003223  00000000  00000000  00005c96  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000e44  00000000  00000000  00008eb9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000660  00000000  00000000  00009d00  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000027c3  00000000  00000000  0000a360  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000016d2  00000000  00000000  0000cb23  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000001e0  00000000  00000000  0000e1f5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 7a 00 	jmp	0xf4	; 0xf4 <__ctors_end>
+   4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+   8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+   c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  10:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  14:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  18:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  1c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  20:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  24:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  28:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  2c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  30:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  34:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  38:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  3c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  40:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  44:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  48:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  4c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  50:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  54:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  58:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  5c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  60:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  64:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  68:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  6c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  70:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  74:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  78:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  7c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  80:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  84:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  88:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  8c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  90:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  94:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  98:	0c 94 b7 01 	jmp	0x36e	; 0x36e <__vector_38>
+  9c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  ac:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  bc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  cc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  dc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  ec:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  f0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+
+000000f4 <__ctors_end>:
+  f4:	11 24       	eor	r1, r1
+  f6:	1f be       	out	0x3f, r1	; 63
+  f8:	cf ef       	ldi	r28, 0xFF	; 255
+  fa:	cd bf       	out	0x3d, r28	; 61
+  fc:	df e7       	ldi	r29, 0x7F	; 127
+  fe:	de bf       	out	0x3e, r29	; 62
+
+00000100 <__do_copy_data>:
+ 100:	10 e4       	ldi	r17, 0x40	; 64
+ 102:	a0 e0       	ldi	r26, 0x00	; 0
+ 104:	b0 e4       	ldi	r27, 0x40	; 64
+ 106:	e6 e9       	ldi	r30, 0x96	; 150
+ 108:	f4 e0       	ldi	r31, 0x04	; 4
+ 10a:	00 e0       	ldi	r16, 0x00	; 0
+ 10c:	0b bf       	out	0x3b, r16	; 59
+ 10e:	02 c0       	rjmp	.+4      	; 0x114 <__do_copy_data+0x14>
+ 110:	07 90       	elpm	r0, Z+
+ 112:	0d 92       	st	X+, r0
+ 114:	a2 30       	cpi	r26, 0x02	; 2
+ 116:	b1 07       	cpc	r27, r17
+ 118:	d9 f7       	brne	.-10     	; 0x110 <__do_copy_data+0x10>
+
+0000011a <__do_clear_bss>:
+ 11a:	20 e4       	ldi	r18, 0x40	; 64
+ 11c:	a2 e0       	ldi	r26, 0x02	; 2
+ 11e:	b0 e4       	ldi	r27, 0x40	; 64
+ 120:	01 c0       	rjmp	.+2      	; 0x124 <.do_clear_bss_start>
+
+00000122 <.do_clear_bss_loop>:
+ 122:	1d 92       	st	X+, r1
+
+00000124 <.do_clear_bss_start>:
+ 124:	aa 32       	cpi	r26, 0x2A	; 42
+ 126:	b2 07       	cpc	r27, r18
+ 128:	e1 f7       	brne	.-8      	; 0x122 <.do_clear_bss_loop>
+ 12a:	0e 94 e1 01 	call	0x3c2	; 0x3c2 <main>
+ 12e:	0c 94 49 02 	jmp	0x492	; 0x492 <_exit>
+
+00000132 <__bad_interrupt>:
+ 132:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000136 <mates_attachMillisFnc>:
+    _mates_WriteCommand(MATES_CMD_APPEND_SCOPE_DATA);
+    _mates_WriteWord((int16_t) index);
+    _mates_WriteWord((int16_t) len);
+    _mates_WriteWordArray(buf, len);
+    return _mates_WaitForACK(matesCmdTimeout);
+}
+ 136:	80 93 1a 40 	sts	0x401A, r24	; 0x80401a <_mates_Millis>
+ 13a:	90 93 1b 40 	sts	0x401B, r25	; 0x80401b <_mates_Millis+0x1>
+ 13e:	08 95       	ret
+
+00000140 <mates_attachWriteFnc>:
+ 140:	80 93 1c 40 	sts	0x401C, r24	; 0x80401c <_mates_SerialWrite>
+ 144:	90 93 1d 40 	sts	0x401D, r25	; 0x80401d <_mates_SerialWrite+0x1>
+ 148:	08 95       	ret
+
+0000014a <mates_attachReadFnc>:
+ 14a:	80 93 20 40 	sts	0x4020, r24	; 0x804020 <_mates_SerialRead>
+ 14e:	90 93 21 40 	sts	0x4021, r25	; 0x804021 <_mates_SerialRead+0x1>
+ 152:	08 95       	ret
+
+00000154 <mates_attachRxCountFnc>:
+ 154:	80 93 18 40 	sts	0x4018, r24	; 0x804018 <_mates_SerialAvailable>
+ 158:	90 93 19 40 	sts	0x4019, r25	; 0x804019 <_mates_SerialAvailable+0x1>
+ 15c:	08 95       	ret
+
+0000015e <_mates_WriteCommand>:
+ 15e:	cf 93       	push	r28
+ 160:	df 93       	push	r29
+ 162:	c8 2f       	mov	r28, r24
+ 164:	d9 2f       	mov	r29, r25
+ 166:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 16a:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 16e:	84 e2       	ldi	r24, 0x24	; 36
+ 170:	09 95       	icall
+ 172:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 176:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 17a:	8d 2f       	mov	r24, r29
+ 17c:	09 95       	icall
+ 17e:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 182:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 186:	8c 2f       	mov	r24, r28
+ 188:	09 95       	icall
+ 18a:	df 91       	pop	r29
+ 18c:	cf 91       	pop	r28
+ 18e:	08 95       	ret
+
+00000190 <_mates_WriteWord>:
+ 190:	cf 93       	push	r28
+ 192:	c8 2f       	mov	r28, r24
+ 194:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 198:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 19c:	89 2f       	mov	r24, r25
+ 19e:	09 95       	icall
+ 1a0:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 1a4:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 1a8:	8c 2f       	mov	r24, r28
+ 1aa:	09 95       	icall
+ 1ac:	cf 91       	pop	r28
+ 1ae:	08 95       	ret
+
+000001b0 <_mates_WriteByteArray>:
+ 1b0:	ef 92       	push	r14
+ 1b2:	ff 92       	push	r15
+ 1b4:	0f 93       	push	r16
+ 1b6:	1f 93       	push	r17
+ 1b8:	cf 93       	push	r28
+ 1ba:	df 93       	push	r29
+ 1bc:	7c 01       	movw	r14, r24
+ 1be:	8b 01       	movw	r16, r22
+ 1c0:	c0 e0       	ldi	r28, 0x00	; 0
+ 1c2:	d0 e0       	ldi	r29, 0x00	; 0
+ 1c4:	0a c0       	rjmp	.+20     	; 0x1da <_mates_WriteByteArray+0x2a>
+ 1c6:	d7 01       	movw	r26, r14
+ 1c8:	ac 0f       	add	r26, r28
+ 1ca:	bd 1f       	adc	r27, r29
+ 1cc:	e0 91 1c 40 	lds	r30, 0x401C	; 0x80401c <_mates_SerialWrite>
+ 1d0:	f0 91 1d 40 	lds	r31, 0x401D	; 0x80401d <_mates_SerialWrite+0x1>
+ 1d4:	8c 91       	ld	r24, X
+ 1d6:	09 95       	icall
+ 1d8:	21 96       	adiw	r28, 0x01	; 1
+ 1da:	c0 17       	cp	r28, r16
+ 1dc:	d1 07       	cpc	r29, r17
+ 1de:	98 f3       	brcs	.-26     	; 0x1c6 <_mates_WriteByteArray+0x16>
+ 1e0:	df 91       	pop	r29
+ 1e2:	cf 91       	pop	r28
+ 1e4:	1f 91       	pop	r17
+ 1e6:	0f 91       	pop	r16
+ 1e8:	ff 90       	pop	r15
+ 1ea:	ef 90       	pop	r14
+ 1ec:	08 95       	ret
+
+000001ee <_mates_WaitForACK>:
+ 1ee:	cf 92       	push	r12
+ 1f0:	df 92       	push	r13
+ 1f2:	ef 92       	push	r14
+ 1f4:	ff 92       	push	r15
+ 1f6:	0f 93       	push	r16
+ 1f8:	1f 93       	push	r17
+ 1fa:	cf 93       	push	r28
+ 1fc:	df 93       	push	r29
+ 1fe:	ec 01       	movw	r28, r24
+ 200:	e0 91 1a 40 	lds	r30, 0x401A	; 0x80401a <_mates_Millis>
+ 204:	f0 91 1b 40 	lds	r31, 0x401B	; 0x80401b <_mates_Millis+0x1>
+ 208:	09 95       	icall
+ 20a:	6b 01       	movw	r12, r22
+ 20c:	7c 01       	movw	r14, r24
+ 20e:	18 c0       	rjmp	.+48     	; 0x240 <__EEPROM_REGION_LENGTH__+0x40>
+ 210:	e0 91 1a 40 	lds	r30, 0x401A	; 0x80401a <_mates_Millis>
+ 214:	f0 91 1b 40 	lds	r31, 0x401B	; 0x80401b <_mates_Millis+0x1>
+ 218:	09 95       	icall
+ 21a:	dc 01       	movw	r26, r24
+ 21c:	cb 01       	movw	r24, r22
+ 21e:	8c 19       	sub	r24, r12
+ 220:	9d 09       	sbc	r25, r13
+ 222:	ae 09       	sbc	r26, r14
+ 224:	bf 09       	sbc	r27, r15
+ 226:	8e 01       	movw	r16, r28
+ 228:	20 e0       	ldi	r18, 0x00	; 0
+ 22a:	30 e0       	ldi	r19, 0x00	; 0
+ 22c:	80 17       	cp	r24, r16
+ 22e:	91 07       	cpc	r25, r17
+ 230:	a2 07       	cpc	r26, r18
+ 232:	b3 07       	cpc	r27, r19
+ 234:	28 f0       	brcs	.+10     	; 0x240 <__EEPROM_REGION_LENGTH__+0x40>
+ 236:	82 e0       	ldi	r24, 0x02	; 2
+ 238:	80 93 02 40 	sts	0x4002, r24	; 0x804002 <__data_end>
+ 23c:	80 e0       	ldi	r24, 0x00	; 0
+ 23e:	18 c0       	rjmp	.+48     	; 0x270 <__EEPROM_REGION_LENGTH__+0x70>
+ 240:	e0 91 18 40 	lds	r30, 0x4018	; 0x804018 <_mates_SerialAvailable>
+ 244:	f0 91 19 40 	lds	r31, 0x4019	; 0x804019 <_mates_SerialAvailable+0x1>
+ 248:	09 95       	icall
+ 24a:	88 23       	and	r24, r24
+ 24c:	09 f3       	breq	.-62     	; 0x210 <__EEPROM_REGION_LENGTH__+0x10>
+ 24e:	e0 91 20 40 	lds	r30, 0x4020	; 0x804020 <_mates_SerialRead>
+ 252:	f0 91 21 40 	lds	r31, 0x4021	; 0x804021 <_mates_SerialRead+0x1>
+ 256:	09 95       	icall
+ 258:	91 e0       	ldi	r25, 0x01	; 1
+ 25a:	86 30       	cpi	r24, 0x06	; 6
+ 25c:	09 f0       	breq	.+2      	; 0x260 <__EEPROM_REGION_LENGTH__+0x60>
+ 25e:	90 e0       	ldi	r25, 0x00	; 0
+ 260:	86 30       	cpi	r24, 0x06	; 6
+ 262:	11 f4       	brne	.+4      	; 0x268 <__EEPROM_REGION_LENGTH__+0x68>
+ 264:	80 e0       	ldi	r24, 0x00	; 0
+ 266:	01 c0       	rjmp	.+2      	; 0x26a <__EEPROM_REGION_LENGTH__+0x6a>
+ 268:	81 e0       	ldi	r24, 0x01	; 1
+ 26a:	80 93 02 40 	sts	0x4002, r24	; 0x804002 <__data_end>
+ 26e:	89 2f       	mov	r24, r25
+ 270:	df 91       	pop	r29
+ 272:	cf 91       	pop	r28
+ 274:	1f 91       	pop	r17
+ 276:	0f 91       	pop	r16
+ 278:	ff 90       	pop	r15
+ 27a:	ef 90       	pop	r14
+ 27c:	df 90       	pop	r13
+ 27e:	cf 90       	pop	r12
+ 280:	08 95       	ret
+
+00000282 <mates_updateDotMatrix>:
+
+// Dot Matrix functions
+
+bool mates_updateDotMatrix(uint16_t index, const char * str) {
+ 282:	ef 92       	push	r14
+ 284:	ff 92       	push	r15
+ 286:	0f 93       	push	r16
+ 288:	1f 93       	push	r17
+ 28a:	cf 93       	push	r28
+ 28c:	df 93       	push	r29
+ 28e:	7c 01       	movw	r14, r24
+ 290:	8b 01       	movw	r16, r22
+    uint16_t len = strlen(str);
+ 292:	fb 01       	movw	r30, r22
+ 294:	01 90       	ld	r0, Z+
+ 296:	00 20       	and	r0, r0
+ 298:	e9 f7       	brne	.-6      	; 0x294 <mates_updateDotMatrix+0x12>
+ 29a:	31 97       	sbiw	r30, 0x01	; 1
+ 29c:	ef 01       	movw	r28, r30
+ 29e:	c6 1b       	sub	r28, r22
+ 2a0:	d7 0b       	sbc	r29, r23
+    _mates_WriteCommand(MATES_CMD_UPDATE_DOT_MATRIX);
+ 2a2:	8a ef       	ldi	r24, 0xFA	; 250
+ 2a4:	9f ef       	ldi	r25, 0xFF	; 255
+ 2a6:	0e 94 af 00 	call	0x15e	; 0x15e <_mates_WriteCommand>
+    _mates_WriteWord((int16_t) index);
+ 2aa:	c7 01       	movw	r24, r14
+ 2ac:	0e 94 c8 00 	call	0x190	; 0x190 <_mates_WriteWord>
+    _mates_WriteWord((int16_t) len);
+ 2b0:	ce 01       	movw	r24, r28
+ 2b2:	0e 94 c8 00 	call	0x190	; 0x190 <_mates_WriteWord>
+    _mates_WriteByteArray((int8_t *) str, len);
+ 2b6:	be 01       	movw	r22, r28
+ 2b8:	c8 01       	movw	r24, r16
+ 2ba:	0e 94 d8 00 	call	0x1b0	; 0x1b0 <_mates_WriteByteArray>
+    return _mates_WaitForACK(matesCmdTimeout);
+ 2be:	80 91 00 40 	lds	r24, 0x4000	; 0x804000 <__DATA_REGION_ORIGIN__>
+ 2c2:	90 91 01 40 	lds	r25, 0x4001	; 0x804001 <__DATA_REGION_ORIGIN__+0x1>
+ 2c6:	0e 94 f7 00 	call	0x1ee	; 0x1ee <_mates_WaitForACK>
+}
+ 2ca:	df 91       	pop	r29
+ 2cc:	cf 91       	pop	r28
+ 2ce:	1f 91       	pop	r17
+ 2d0:	0f 91       	pop	r16
+ 2d2:	ff 90       	pop	r15
+ 2d4:	ef 90       	pop	r14
+ 2d6:	08 95       	ret
+
+000002d8 <writeFnc_x>:
+	TCA0.SINGLE.CTRLA = TCA_SINGLE_CLKSEL_DIV256_gc |TCA_SINGLE_ENABLE_bm;
+}
+
+void writeFnc_x(uint8_t c)
+{
+	while(!(USART2.STATUS & USART_DREIF_bm)) //bit mask for interrupts
+ 2d8:	90 91 44 08 	lds	r25, 0x0844	; 0x800844 <__TEXT_REGION_LENGTH__+0x7e0844>
+ 2dc:	95 ff       	sbrs	r25, 5
+ 2de:	fc cf       	rjmp	.-8      	; 0x2d8 <writeFnc_x>
+{
+	//waiting for the DATA register is empty
+}	
+	USART2.TXDATAL = c; //if the register is empty, then we can send the character
+ 2e0:	80 93 42 08 	sts	0x0842, r24	; 0x800842 <__TEXT_REGION_LENGTH__+0x7e0842>
+ 2e4:	08 95       	ret
+
+000002e6 <readFnc_x>:
+	//return 0; //this statement had to be added for the error "warning:control reaches end of non-void function" to be rid of
+}
+uint8_t readFnc_x()
+{
+	while(!(USART2.STATUS & USART_RXCIF_bm)) //bit mask for interrupts to receive
+ 2e6:	80 91 44 08 	lds	r24, 0x0844	; 0x800844 <__TEXT_REGION_LENGTH__+0x7e0844>
+ 2ea:	88 23       	and	r24, r24
+ 2ec:	e4 f7       	brge	.-8      	; 0x2e6 <readFnc_x>
+	{
+		//waiting to receive data
+	}
+	return USART2.RXDATAL; //if the register is empty, then we can read in the character
+ 2ee:	80 91 40 08 	lds	r24, 0x0840	; 0x800840 <__TEXT_REGION_LENGTH__+0x7e0840>
+}
+ 2f2:	08 95       	ret
+
+000002f4 <millisFnc_x>:
+	uint32_t millisFnc_x()
+{	
+	 while(count_millis<500) //waiting for the timer to reach 500 ms
+ 2f4:	60 91 16 40 	lds	r22, 0x4016	; 0x804016 <count_millis>
+ 2f8:	70 91 17 40 	lds	r23, 0x4017	; 0x804017 <count_millis+0x1>
+ 2fc:	64 3f       	cpi	r22, 0xF4	; 244
+ 2fe:	81 e0       	ldi	r24, 0x01	; 1
+ 300:	78 07       	cpc	r23, r24
+ 302:	c0 f3       	brcs	.-16     	; 0x2f4 <millisFnc_x>
+	 }
+	// if(count==500)
+	// {
+		//return count;
+	// }
+	return count_millis; //returns the count in milliseconds 
+ 304:	80 e0       	ldi	r24, 0x00	; 0
+ 306:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 308:	08 95       	ret
+
+0000030a <rxCountFnc_x>:
+
+//*************Circular Buffer Implementation************************//
+uint8_t rxCountFnc_x(void)
+	{	
+		uint8_t data = 0;	
+		while(0==count)
+ 30a:	80 91 03 40 	lds	r24, 0x4003	; 0x804003 <count>
+ 30e:	88 23       	and	r24, r24
+ 310:	e1 f3       	breq	.-8      	; 0x30a <rxCountFnc_x>
+		{
+			//if the count is 0, we have reached the end of the array
+		}
+		data = RX_buffer[RX_tail++]; //increment the location of the tail 
+ 312:	e0 91 15 40 	lds	r30, 0x4015	; 0x804015 <RX_tail>
+ 316:	91 e0       	ldi	r25, 0x01	; 1
+ 318:	9e 0f       	add	r25, r30
+ 31a:	90 93 15 40 	sts	0x4015, r25	; 0x804015 <RX_tail>
+ 31e:	f0 e0       	ldi	r31, 0x00	; 0
+ 320:	ec 5f       	subi	r30, 0xFC	; 252
+ 322:	ff 4b       	sbci	r31, 0xBF	; 191
+ 324:	80 81       	ld	r24, Z
+		if(sizeof(RX_buffer)<=RX_tail)
+ 326:	90 31       	cpi	r25, 0x10	; 16
+ 328:	10 f0       	brcs	.+4      	; 0x32e <rxCountFnc_x+0x24>
+		{
+			RX_tail = 0; //if the tail is greater than the array size, move the tail pointer to the start of the array
+ 32a:	10 92 15 40 	sts	0x4015, r1	; 0x804015 <RX_tail>
+		}
+		count--; //decrement the count 
+ 32e:	90 91 03 40 	lds	r25, 0x4003	; 0x804003 <count>
+ 332:	91 50       	subi	r25, 0x01	; 1
+ 334:	90 93 03 40 	sts	0x4003, r25	; 0x804003 <count>
+		return data; //returning the data located at the tail (implementing FIFO)
+	}
+ 338:	08 95       	ret
+
+0000033a <tca_initialize>:
+uint32_t (* millisFnc)(void); //function to setup the millisecond function
+uint8_t (* rxCountFnc)(void); //function to setup wait_for_acknowledge function
+
+void tca_initialize(void)  //function to initialize timer counter
+{
+	TCA0.SINGLE.INTCTRL = TCA_SINGLE_OVF_bm;
+ 33a:	e0 e0       	ldi	r30, 0x00	; 0
+ 33c:	fa e0       	ldi	r31, 0x0A	; 10
+ 33e:	81 e0       	ldi	r24, 0x01	; 1
+ 340:	82 87       	std	Z+10, r24	; 0x0a
+	TCA0.SINGLE.CTRLB  = TCA_SINGLE_WGMODE_NORMAL_gc;
+ 342:	11 82       	std	Z+1, r1	; 0x01
+	TCA0.SINGLE.PER = period;
+ 344:	80 e1       	ldi	r24, 0x10	; 16
+ 346:	90 e0       	ldi	r25, 0x00	; 0
+ 348:	86 a3       	std	Z+38, r24	; 0x26
+ 34a:	97 a3       	std	Z+39, r25	; 0x27
+	TCA0.SINGLE.CTRLA = TCA_SINGLE_CLKSEL_DIV256_gc |TCA_SINGLE_ENABLE_bm;
+ 34c:	8d e0       	ldi	r24, 0x0D	; 13
+ 34e:	80 83       	st	Z, r24
+ 350:	08 95       	ret
+
+00000352 <RX_initial>:
+	return count_millis; //returns the count in milliseconds 
+}
+
+void RX_initial() //initializing the receiver
+{
+	PORTF.DIR &= ~PIN5_bm; //setting PORTF5 as an input (RX) for USART2
+ 352:	e0 ea       	ldi	r30, 0xA0	; 160
+ 354:	f4 e0       	ldi	r31, 0x04	; 4
+ 356:	80 81       	ld	r24, Z
+ 358:	8f 7d       	andi	r24, 0xDF	; 223
+ 35a:	80 83       	st	Z, r24
+	//PORTMUX.USARTROUTEA |= PORTMUX_USART20_bm;
+	USART2.CTRLB |= (USART_RXEN_bm); //enabling the receiver (RX) as the output
+ 35c:	e0 e4       	ldi	r30, 0x40	; 64
+ 35e:	f8 e0       	ldi	r31, 0x08	; 8
+ 360:	86 81       	ldd	r24, Z+6	; 0x06
+ 362:	80 68       	ori	r24, 0x80	; 128
+ 364:	86 83       	std	Z+6, r24	; 0x06
+	USART2.CTRLA |= (USART_RXCIE_bm); //enable interrupt
+ 366:	85 81       	ldd	r24, Z+5	; 0x05
+ 368:	80 68       	ori	r24, 0x80	; 128
+ 36a:	85 83       	std	Z+5, r24	; 0x05
+ 36c:	08 95       	ret
+
+0000036e <__vector_38>:
+}
+
+//********ISR for Circular Buffer**************//
+
+ISR(USART2_RXC_vect) //ISR for the circular buffer
+{
+ 36e:	1f 92       	push	r1
+ 370:	0f 92       	push	r0
+ 372:	0f b6       	in	r0, 0x3f	; 63
+ 374:	0f 92       	push	r0
+ 376:	11 24       	eor	r1, r1
+ 378:	0b b6       	in	r0, 0x3b	; 59
+ 37a:	0f 92       	push	r0
+ 37c:	8f 93       	push	r24
+ 37e:	9f 93       	push	r25
+ 380:	ef 93       	push	r30
+ 382:	ff 93       	push	r31
+	uint8_t data;
+	uint8_t temphead;
+	
+	cli();//clear the interrupt
+ 384:	f8 94       	cli
+	
+	data = USART2.RXDATAL; //read the data
+ 386:	90 91 40 08 	lds	r25, 0x0840	; 0x800840 <__TEXT_REGION_LENGTH__+0x7e0840>
+	
+	temphead = (RX_head+1) & USART_RX_BUFFER_MASK; //incrementing the head after receiving data
+ 38a:	80 91 14 40 	lds	r24, 0x4014	; 0x804014 <RX_head>
+ 38e:	8f 5f       	subi	r24, 0xFF	; 255
+ 390:	8f 70       	andi	r24, 0x0F	; 15
+	if(temphead == RX_tail)
+	{
+		//if head and tail are equal, we have reached the end of the array
+	}
+	RX_buffer[temphead] = data; //if the temp head doesn't equal the tail (array is not empty) store data at head
+ 392:	e8 2f       	mov	r30, r24
+ 394:	f0 e0       	ldi	r31, 0x00	; 0
+ 396:	ec 5f       	subi	r30, 0xFC	; 252
+ 398:	ff 4b       	sbci	r31, 0xBF	; 191
+ 39a:	90 83       	st	Z, r25
+	RX_head = temphead;
+ 39c:	80 93 14 40 	sts	0x4014, r24	; 0x804014 <RX_head>
+	count++; //increment the count in terms of head.
+ 3a0:	80 91 03 40 	lds	r24, 0x4003	; 0x804003 <count>
+ 3a4:	8f 5f       	subi	r24, 0xFF	; 255
+ 3a6:	80 93 03 40 	sts	0x4003, r24	; 0x804003 <count>
+	sei();//enable global interrupts
+ 3aa:	78 94       	sei
+} 
+ 3ac:	ff 91       	pop	r31
+ 3ae:	ef 91       	pop	r30
+ 3b0:	9f 91       	pop	r25
+ 3b2:	8f 91       	pop	r24
+ 3b4:	0f 90       	pop	r0
+ 3b6:	0b be       	out	0x3b, r0	; 59
+ 3b8:	0f 90       	pop	r0
+ 3ba:	0f be       	out	0x3f, r0	; 63
+ 3bc:	0f 90       	pop	r0
+ 3be:	1f 90       	pop	r1
+ 3c0:	18 95       	reti
+
+000003c2 <main>:
+		count--; //decrement the count 
+		return data; //returning the data located at the tail (implementing FIFO)
+	}
+
+int main(void)
+{
+ 3c2:	cf 93       	push	r28
+ 3c4:	df 93       	push	r29
+ 3c6:	00 d0       	rcall	.+0      	; 0x3c8 <main+0x6>
+ 3c8:	00 d0       	rcall	.+0      	; 0x3ca <main+0x8>
+ 3ca:	cd b7       	in	r28, 0x3d	; 61
+ 3cc:	de b7       	in	r29, 0x3e	; 62
+	PORTF.DIR |= PIN4_bm; //setting PORTF4 as an output (TX) for USART2
+ 3ce:	e0 ea       	ldi	r30, 0xA0	; 160
+ 3d0:	f4 e0       	ldi	r31, 0x04	; 4
+ 3d2:	80 81       	ld	r24, Z
+ 3d4:	80 61       	ori	r24, 0x10	; 16
+ 3d6:	80 83       	st	Z, r24
+	PORTMUX.USARTROUTEA |= PORTMUX_USART20_bm;
+ 3d8:	e0 ee       	ldi	r30, 0xE0	; 224
+ 3da:	f5 e0       	ldi	r31, 0x05	; 5
+ 3dc:	82 81       	ldd	r24, Z+2	; 0x02
+ 3de:	80 61       	ori	r24, 0x10	; 16
+ 3e0:	82 83       	std	Z+2, r24	; 0x02
+	RX_initial(); //setting up receiver 
+ 3e2:	0e 94 a9 01 	call	0x352	; 0x352 <RX_initial>
+	
+	USART2.BAUD = (uint16_t)USART2_BAUD_RATE(9600); //initializing the baud rate. 
+ 3e6:	e0 e4       	ldi	r30, 0x40	; 64
+ 3e8:	f8 e0       	ldi	r31, 0x08	; 8
+ 3ea:	83 e8       	ldi	r24, 0x83	; 131
+ 3ec:	96 e0       	ldi	r25, 0x06	; 6
+ 3ee:	80 87       	std	Z+8, r24	; 0x08
+ 3f0:	91 87       	std	Z+9, r25	; 0x09
+	
+	USART2.CTRLB |= USART_TXEN_bm; //enabling the transmitter (TX) as the output
+ 3f2:	86 81       	ldd	r24, Z+6	; 0x06
+ 3f4:	80 64       	ori	r24, 0x40	; 64
+ 3f6:	86 83       	std	Z+6, r24	; 0x06
+	
+	USART2_CTRLC = USART_PMODE_DISABLED_gc | USART_CHSIZE_8BIT_gc | USART_SBMODE_1BIT_gc; //8 bits, no parity, 1 stop bit
+ 3f8:	83 e0       	ldi	r24, 0x03	; 3
+ 3fa:	80 93 47 08 	sts	0x0847, r24	; 0x800847 <__TEXT_REGION_LENGTH__+0x7e0847>
+	
+	 tca_initialize(); //initialize timer counter
+ 3fe:	0e 94 9d 01 	call	0x33a	; 0x33a <tca_initialize>
+	 sei(); //enable global interrupt
+ 402:	78 94       	sei
+	
+	writeFnc = writeFnc_x;
+ 404:	8c e6       	ldi	r24, 0x6C	; 108
+ 406:	91 e0       	ldi	r25, 0x01	; 1
+ 408:	80 93 24 40 	sts	0x4024, r24	; 0x804024 <writeFnc>
+ 40c:	90 93 25 40 	sts	0x4025, r25	; 0x804025 <writeFnc+0x1>
+	readFnc = readFnc_x;
+ 410:	83 e7       	ldi	r24, 0x73	; 115
+ 412:	91 e0       	ldi	r25, 0x01	; 1
+ 414:	80 93 26 40 	sts	0x4026, r24	; 0x804026 <readFnc>
+ 418:	90 93 27 40 	sts	0x4027, r25	; 0x804027 <readFnc+0x1>
+	millisFnc = millisFnc_x;
+ 41c:	8a e7       	ldi	r24, 0x7A	; 122
+ 41e:	91 e0       	ldi	r25, 0x01	; 1
+ 420:	80 93 22 40 	sts	0x4022, r24	; 0x804022 <millisFnc>
+ 424:	90 93 23 40 	sts	0x4023, r25	; 0x804023 <millisFnc+0x1>
+	rxCountFnc = rxCountFnc_x;
+ 428:	85 e8       	ldi	r24, 0x85	; 133
+ 42a:	91 e0       	ldi	r25, 0x01	; 1
+ 42c:	80 93 28 40 	sts	0x4028, r24	; 0x804028 <rxCountFnc>
+ 430:	90 93 29 40 	sts	0x4029, r25	; 0x804029 <rxCountFnc+0x1>
+	
+	mates_attachWriteFnc(writeFnc);
+ 434:	8c e6       	ldi	r24, 0x6C	; 108
+ 436:	91 e0       	ldi	r25, 0x01	; 1
+ 438:	0e 94 a0 00 	call	0x140	; 0x140 <mates_attachWriteFnc>
+	mates_attachReadFnc(readFnc);
+ 43c:	80 91 26 40 	lds	r24, 0x4026	; 0x804026 <readFnc>
+ 440:	90 91 27 40 	lds	r25, 0x4027	; 0x804027 <readFnc+0x1>
+ 444:	0e 94 a5 00 	call	0x14a	; 0x14a <mates_attachReadFnc>
+	mates_attachMillisFnc(millisFnc); 
+ 448:	80 91 22 40 	lds	r24, 0x4022	; 0x804022 <millisFnc>
+ 44c:	90 91 23 40 	lds	r25, 0x4023	; 0x804023 <millisFnc+0x1>
+ 450:	0e 94 9b 00 	call	0x136	; 0x136 <mates_attachMillisFnc>
+	mates_attachRxCountFnc(rxCountFnc);
+ 454:	80 91 28 40 	lds	r24, 0x4028	; 0x804028 <rxCountFnc>
+ 458:	90 91 29 40 	lds	r25, 0x4029	; 0x804029 <rxCountFnc+0x1>
+ 45c:	0e 94 aa 00 	call	0x154	; 0x154 <mates_attachRxCountFnc>
+	
+ // uint8_t c = 'S'; //sending out letter S
+   uint16_t index = 0;
+   char str[] = "ABC";
+ 460:	81 e4       	ldi	r24, 0x41	; 65
+ 462:	92 e4       	ldi	r25, 0x42	; 66
+ 464:	89 83       	std	Y+1, r24	; 0x01
+ 466:	9a 83       	std	Y+2, r25	; 0x02
+ 468:	83 e4       	ldi	r24, 0x43	; 67
+ 46a:	90 e0       	ldi	r25, 0x00	; 0
+ 46c:	8b 83       	std	Y+3, r24	; 0x03
+ 46e:	9c 83       	std	Y+4, r25	; 0x04
+   const char *str_display = str;
+
+//	mates_setPage(0); //choose page 0 -->this function works
+    while (1) 
+    {
+		mates_updateDotMatrix(index, str_display);
+ 470:	be 01       	movw	r22, r28
+ 472:	6f 5f       	subi	r22, 0xFF	; 255
+ 474:	7f 4f       	sbci	r23, 0xFF	; 255
+ 476:	80 e0       	ldi	r24, 0x00	; 0
+ 478:	90 e0       	ldi	r25, 0x00	; 0
+ 47a:	0e 94 41 01 	call	0x282	; 0x282 <mates_updateDotMatrix>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 47e:	2f e7       	ldi	r18, 0x7F	; 127
+ 480:	8a e1       	ldi	r24, 0x1A	; 26
+ 482:	96 e0       	ldi	r25, 0x06	; 6
+ 484:	21 50       	subi	r18, 0x01	; 1
+ 486:	80 40       	sbci	r24, 0x00	; 0
+ 488:	90 40       	sbci	r25, 0x00	; 0
+ 48a:	e1 f7       	brne	.-8      	; 0x484 <__LOCK_REGION_LENGTH__+0x84>
+ 48c:	00 c0       	rjmp	.+0      	; 0x48e <__LOCK_REGION_LENGTH__+0x8e>
+ 48e:	00 00       	nop
+ 490:	ef cf       	rjmp	.-34     	; 0x470 <__LOCK_REGION_LENGTH__+0x70>
+
+00000492 <_exit>:
+ 492:	f8 94       	cli
+
+00000494 <__stop_program>:
+ 494:	ff cf       	rjmp	.-2      	; 0x494 <__stop_program>
